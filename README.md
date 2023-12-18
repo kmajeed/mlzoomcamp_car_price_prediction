@@ -1,7 +1,7 @@
 # Captstone Project 1: Used car price prediction
 
 ## Problem description
-The Goal of this project is to build a used car price prediction model. I used the **100,000 UK Used Car Data set** available from [https://www.kaggle.com/datasets/adityadesai13/used-car-dataset-ford-and-mercedes/data](Kaggle)
+The Goal of this project is to build a used car price prediction model. I used the **100,000 UK Used Car Data set** available from https://www.kaggle.com/datasets/adityadesai13/used-car-dataset-ford-and-mercedes/data 
 
 This dataset consists of 13 files, each for a different manufacture. The dataset was collected from UK car sales data. For the purpose of this project I will only be using car sales data for **BMW** cars
 
@@ -89,7 +89,7 @@ The output of my testing can viewed ![Prediction Service via Flask](flask_test.p
 I have supplied logs of building and running the web service via docker container in `docker_deploy_log.md` file. To sumnmarise, navigate to oroject folder in terminal and execute following commands 
 
 ```bash
-sudo docker build -t car-price-prediction-service 
+sudo docker build -t car-price-prediction-service .
 sudo docker run -it -p 9696:9696 car-price-prediction-service
 ```
 
@@ -99,7 +99,7 @@ The output of my testing can viewed ![Prediction Service via Docker](docker_test
 
 ## Cloud Service
 
-I have used `Render.com` cloud platform which oofers a free teir for testing purposing. You just have to connect GitHub account and it can pick choose the repo where Docker file is located. The instance of my service is located at https://car-price-prediction-rnnk.onrender.com
+I have used `Render.com` cloud platform which offers a free tier for testing purposing. You just have to connect GitHub account and it can pick choose the repo where Docker file is located. The instance of my service is located at https://car-price-prediction-rnnk.onrender.com
 
 Since this is a free instance, it is very likely that at the time of testing Render.com would have alreay shut the instance down due to inactivity. So i will urge you to use the output of my testing from following screen shot ![Prediction Service via cloud based platform](cloud_test.png) 
 
