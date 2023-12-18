@@ -92,7 +92,14 @@ I have supplied logs of building and running the web service via docker containe
 sudo docker build -t car-price-prediction-service 
 sudo docker run -it -p 9696:9696 car-price-prediction-service
 ```
+
 To test the prediction service, you can use applications like `HTTPie` or `Postman`.
 
 The output of my testing can viewed ![Prediction Service via Docker](docker_test.png) 
+
+## Cloud Service
+
+I have used `Render.com` cloud platform which oofers a free teir for testing purposing. You just have to connect GitHub account and it can pick choose the repo where Docker file is located. The instance of my service is located at https://car-price-prediction-rnnk.onrender.com
+
+Since this is a free instance, it is very likely that at the time of testing Render.com would have alreay shut the instance down due to inactivity. So i will urge you to use the output of my testing from following screen shot ![Prediction Service via cloud based platform](cloud_test.png) 
 
